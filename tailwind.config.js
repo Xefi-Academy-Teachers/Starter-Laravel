@@ -6,9 +6,14 @@ module.exports = {
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
+        "./node_modules/flowbite/**/*.js"
     ],
 
     theme: {
+        colors: {
+            'primary': '#22C55E',
+            'primary-dark': '#16A34A'
+        },
         extend: {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
@@ -16,5 +21,8 @@ module.exports = {
         },
     },
 
-    plugins: [require('@tailwindcss/forms')],
+    plugins: [
+        require('@tailwindcss/forms'),
+        require('flowbite/plugin')
+    ],
 };
