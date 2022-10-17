@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
 
          \App\Models\User::factory()->create([
              'name' => 'Gautier Deleglise',
-             'email' => 'gautier.deleglise@xefi.fr',
+             'email' => 'gautier.deleglise@fakemail.fr',
          ]);
     }
 }
